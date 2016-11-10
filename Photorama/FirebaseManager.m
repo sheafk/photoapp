@@ -12,13 +12,13 @@
 @import FirebaseDatabase;
 
 @interface FirebaseManager ()
-@property (strong, nonatomic) FIRDatabaseReference *ref;
+@property (strong, nonatomic) FIRDatabaseReference *ref; //instance var
 
 @end
 
 @implementation FirebaseManager
 
-+ (id)sharedManager {
++ (id)sharedManager { //Class method to return singleton object
     
     static FirebaseManager *sharedManager = nil;
     static dispatch_once_t onceToken;
@@ -29,6 +29,7 @@
     
 }
 
+//Custom init for singleton
 - (instancetype) init {
     self = [super init];
     if (self) {
@@ -39,6 +40,7 @@
     return self;
 }
 
+//These are methods custom to the singleton class of FirebaseManager
 - (void) postEventRequest: (EventRequest *)eventRequest {
     
     NSNumber *eventId = @(eventRequest.event.eventId);

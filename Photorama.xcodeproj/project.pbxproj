@@ -16,6 +16,7 @@
 		1B2384421DBEAF18003AD767 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2384411DBEAF18003AD767 /* PhotosViewController.swift */; };
 		1B2384441DC1049E003AD767 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2384431DC1049E003AD767 /* FlickrAPI.swift */; };
 		1B2384511DC780A1003AD767 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2384501DC780A1003AD767 /* PhotoStore.swift */; };
+		1B9DC9471DD52DE300649DC2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DC9461DD52DE300649DC2 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1B2384411DBEAF18003AD767 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		1B2384431DC1049E003AD767 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 		1B2384501DC780A1003AD767 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		1B9DC9461DD52DE300649DC2 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1B2384131DBEADA5003AD767 /* AppDelegate.swift */,
 				1B2384411DBEAF18003AD767 /* PhotosViewController.swift */,
+				1B9DC9461DD52DE300649DC2 /* Photo.swift */,
 				1B2384431DC1049E003AD767 /* FlickrAPI.swift */,
 				1B2384501DC780A1003AD767 /* PhotoStore.swift */,
 				1B2384171DBEADA5003AD767 /* Main.storyboard */,
@@ -269,6 +272,7 @@
 				1B2384421DBEAF18003AD767 /* PhotosViewController.swift in Sources */,
 				1B2384511DC780A1003AD767 /* PhotoStore.swift in Sources */,
 				1B2384141DBEADA5003AD767 /* AppDelegate.swift in Sources */,
+				1B9DC9471DD52DE300649DC2 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +517,7 @@
 				1B23843A1DBEADA5003AD767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B23843B1DBEADA5003AD767 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				1B23843D1DBEADA5003AD767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B23843E1DBEADA5003AD767 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				1B2384401DBEADA5003AD767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
