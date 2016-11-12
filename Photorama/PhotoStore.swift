@@ -21,10 +21,11 @@ class PhotoStore {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             if let jsonData = data {
-            if let jsonString = String(data: jsonData,
-                                       encoding: .utf8) {
-                print(jsonString)
-            }
+                do { let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                    print(jsonObject)
+                } catch let error {
+                    print("Error creating JSON Object: \(error)")
+                }
             } else if let requestError = error {
                 print("Error fetching interesting photos: \(requestError)")
             } else {
